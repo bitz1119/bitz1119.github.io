@@ -3,7 +3,7 @@
 A single-page editorial portfolio for **Bittoo Aggarwal** — Co-Founder & CTO at Wavexcel,
 ex-Geekster founding team, ex-Amazon SDE.
 
-**Live →** _GitHub Pages URL added once deployed._
+**Live →** https://bitz1119.github.io/
 
 ---
 
