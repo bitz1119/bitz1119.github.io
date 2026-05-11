@@ -793,6 +793,71 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .edu-row .deg { grid-column: span 2; }
 }
 
+/* ----- publications ----- */
+.pub-list {
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.pub-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding: clamp(28px, 4vw, 52px) 0;
+  border-bottom: 1px solid var(--rule);
+}
+.pub-item:last-child { border-bottom: 0; }
+.pub-meta {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.pub-title {
+  font-family: var(--serif);
+  font-size: clamp(26px, 3.2vw, 42px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 380;
+  max-width: 24ch;
+}
+.pub-title em { font-style: italic; color: var(--accent); }
+.pub-authors {
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+.pub-authors strong { color: var(--ink); font-weight: 600; }
+.pub-venue {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink-3);
+  max-width: 60ch;
+}
+.pub-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 3px;
+  color: var(--ink);
+  width: max-content;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.pub-link:hover { color: var(--accent); border-color: var(--accent); }
+.pub-doi {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
 /* ----- content / creator ----- */
 .content-grid {
   display: grid;
@@ -1162,6 +1227,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
         <div class="work-foot"><small>Indian Army · 1 Field Trial Sub Group · c/o 56 APO</small><span class="work-arrow">→</span></div>
       </a>
 
+      <a class="work-card col-7" href="https://rajrani.store/" target="_blank" rel="noopener">
+        <span class="stamp">Live</span>
+        <div class="work-meta"><span>Nº 08 / D2C</span><span>2026</span></div>
+        <h3 class="work-title">Rajrani.store — <em>Retail</em> storefront.</h3>
+        <p class="work-desc">A production D2C e‑commerce site — product catalog, polished UX, and a checkout flow tuned for real customers.</p>
+        <div class="work-foot"><small>rajrani.store</small><span class="work-arrow">↗</span></div>
+      </a>
+
     </div>
   </section>
 
@@ -1369,11 +1442,39 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     </div>
   </section>
 
+  <!-- ============================================== PUBLICATIONS ============================================== -->
+  <section class="section" id="publications">
+    <div class="section-head reveal">
+      <div class="section-num">
+        <strong>08</strong>
+        <span>Publications</span>
+      </div>
+      <div>
+        <h2 class="section-title">A peer-reviewed <em>book chapter</em>.</h2>
+        <p class="section-lede">Co-authored research on deep generative models for video — published by Wiley in an edited volume on emerging AI.</p>
+      </div>
+    </div>
+
+    <div class="pub-list reveal">
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span>Chapter 15 · Wiley</span>
+          <span>First published · 24 March 2021</span>
+        </div>
+        <h3 class="pub-title">Motion Transfer in Videos using Deep Convolutional <em>Generative Adversarial Networks</em></h3>
+        <p class="pub-authors">Savitoj Singh · <strong>Bittoo Aggarwal</strong> · Vipin Bhardwaj · Anupam Kumar</p>
+        <p class="pub-venue">Book editors: Namita Gupta, Prasenjit Chatterjee, Tanupriya Choudhury</p>
+        <a class="pub-link" href="https://onlinelibrary.wiley.com/doi/10.1002/9781119752134.ch15" target="_blank" rel="noopener">Read on Wiley Online Library →</a>
+        <span class="pub-doi">DOI: 10.1002/9781119752134.ch15</span>
+      </article>
+    </div>
+  </section>
+
   <!-- ============================================== CONTENT / CREATOR ============================================== -->
   <section class="section" id="content">
     <div class="section-head reveal">
       <div class="section-num">
-        <strong>08</strong>
+        <strong>09</strong>
         <span>Teaching · Reels · Writing</span>
       </div>
       <div>
@@ -1418,7 +1519,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
   <!-- ============================================== CONTACT ============================================== -->
   <section class="cta-block" id="contact">
-    <p class="kicker reveal">09 · Reach Out</p>
+    <p class="kicker reveal">10 · Reach Out</p>
     <h2 class="cta-head reveal">
       Let's <em>build</em><br/>
       <a href="mailto:bittooaggarwal1@gmail.com">something good →</a>
